@@ -1,0 +1,572 @@
+/* Сброс стандартных браузерных стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --bg1:rgb(240, 225, 225);
+  --bg2:#ebb6b6;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  padding: 10px 10px;
+  line-height: 1.6;
+  background-image: url('16.jpg');
+  backdrop-filter: blur(9px);
+  color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.big_section{
+  max-width: 900px;
+  height: 750px;
+  display:flex;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 40px auto 20px 10px;
+  position: relative;
+  background-color: #deb887;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 10px solid transparent; /* transparent для изображения */
+  border-image: url('16.jpg') 30 round; /* Путь к файлу и как повторять */
+}
+
+.side-text p{
+  font-size: 30px;
+  margin: left 30px;
+  padding: 80px;
+  width: 700px;
+  margin-top: 100px;
+  line-height: 1.5;
+  color: black;
+}
+
+.handwriting {
+    font-family: 'Times New Roman', serif; /* Классический шрифт с засечками для имитации ручки */
+    font-style: italic; /* Курсив для большей "рукописности" */
+    font-size: 18px;
+    /* Дополнительные эффекты для небрежности */
+    line-height: 1.5;
+    /* text-shadow: 1px 1px 1px rgba(0,0,0,0.1);  Легкая тень для объема */
+    font-weight: bold;
+  }
+
+/* Заголовок */
+.section-header {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 100px;
+  color: black;
+  background-color: #d6a3a3;
+}
+
+.section-header h1 {
+  font-size: 3.05rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px #1a1818, /* Тень 1: Смещение 2px вправо, 2px вниз, размытия нет */
+               4px 4px 0px #312c2c, /* Тень 2: Еще дальше, темнее */
+               6px 6px 0px #0c0c0c; /* Тень 3: Самая дальше, еще темнее */
+ }
+
+.section-header p {
+  font-size: 1.2rem;
+ }
+
+header{
+  display:flex;
+  height: 98px;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 30px;
+}
+
+.header{
+    background-color: var(--bg1);
+    border-radius: 5px;
+}
+
+header .logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:20px;
+  font-weight:95%;
+  text-decoration: underline dotted;
+}
+
+.logo img{
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+}
+
+header nav a{
+  margin-left:24px;
+  color:#ebb6b6;
+  text-decoration:none;
+  font-size:16px;
+  color:black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f1d2d2;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #e07777;
+}
+
+.section-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+  color: #333333;
+  letter-spacing: 0.02em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  color:rgb(22, 22, 22);
+}
+
+.swiper {
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+    background-color: #deb887;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color:  #deb887;
+}    
+
+.swiper-slide {
+  background:  #deb887;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.paint-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#e07796
+}
+
+.paint-image {
+  width: 100%;
+  height: 90%;
+  background-color:  #deb887; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.paint-info {
+  flex: 0px 0px 0px 0px;
+  padding: 0px;
+  background-color: #deb887;
+}
+
+.paint-description {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #0e0d0d;
+  background-color: rgb(197, 228, 166);
+  text-align: center;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.paint-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.swiper-slide:hover .paint-image {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-color: #b5c5c6;
+}
+
+.swiper-slide:hover .paint-image img {
+  transform: scale(1.02);
+}
+
+.big_button{
+  width: 160px;
+  height: 50px;
+  color:black;
+  background-color: #ebb6b6;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center; 
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.big_button:hover{
+  border-radius: 8px;
+  background-color: #e07777;
+  font-weight: bold;
+  font-size: 15px;
+}  
+
+@supports not (-webkit-line-clamp: 2) {
+  .book-description {
+    max-height: calc(1.4em * 2);
+  }
+}
+
+.swiper-slide:hover .book-description {
+  color: #e0e0e0;
+}
+
+.swiper-button-prev:focus-visible,
+.swiper-button-next:focus-visible {
+  outline: 2px solid #B5E916;
+  outline-offset: 2px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 0.8;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background: rgba(50, 50, 50, 0.8);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 1 !important;
+}
+
+.swiper-button-prev {
+  left: 3px;
+}
+
+.swiper-button-next {
+  right: 3px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #ED7251;
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(237, 114, 81, 0.4);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-button-next:hover:after {
+  transform: translateX(2px);
+}
+
+.swiper-button-prev:hover:after {
+  transform: translateX(-2px);
+}
+
+main {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .section-header h1 {
+    font-size: 2.5rem;
+  }
+
+.swiper {
+    padding: 40px 50px 60px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    height: 500px;
+    margin: 10px 10px 20px 10px;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 400px;
+    margin: 10px 5px 20px 5px;
+  }
+
+  .section-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  .swiper {
+    padding: 15px 25px 10px 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 10px 0;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .category-card {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+
+  .category-card img {
+    height: 40vh;
+  }
+
+  .view-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 119, 119);
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.footer1{
+    display:flex;
+}
+
+.rights {
+    width: 22px;
+    height: 22px;
+    margin-right: 22px;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 80px;
+    overflow: hidden;
+    width: 550px;
+    height: 750px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 10px solid transparent; /* transparent для изображения */
+    border-image: url('9.jpg') 30 round; /* Путь к файлу и как повторять */
+  
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+    background-color: #deb887;
+}
+
+.categories .category-card:nth-child(1) {
+    background-color: #deb887;
+    padding-top: 20px;
+}
+
+.categories .category-card:nth-child(1) img {
+    margin-top: 0px;
+}
+
+.categories .category-card:nth-child(2),
+.categories .category-card:nth-child(3) {
+    background-color: #deb887;
+}
+
+.categories .category-card:nth-child(2) img {
+    margin-top: 20px;
+}
+
+.categories .category-card:nth-child(3) img {
+    margin-top: 20px;
+}
+.category-card h3 {
+    padding: 10px;
+    font-size: 1.7em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.paint-description:hover {
+    color: blue;
+}
+
+.view-button {
+    width: 140px;
+    height: 40px;
+    color: black;
+    background-color: #c56f6f;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    border-radius: 8px;
+    background-color: #963f3f;
+    font-weight: bold;
+    font-size: 15px;
+}
