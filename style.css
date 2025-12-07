@@ -40,23 +40,26 @@ h1 {
 .container {
   width: 100%;
   height: 100%;
-  margin: 40px auto 20px 10px;
+  margin: 20px auto;
   position: relative;
   background-color: #deb887;
   border-radius: 10px;
   backdrop-filter: blur(15px);
   border: 10px solid transparent; /* transparent для изображения */
   border-image: url('16.jpg') 30 round; /* Путь к файлу и как повторять */
+  padding: 10px;
 }
 
 .side-text p{
-  font-size: 30px;
-  margin: left 30px;
-  padding: 80px;
+  font-size: 24px;
+  margin: 20px;
+  margin-left: 70px;
+  padding: 30px;
   width: 700px;
   margin-top: 100px;
-  line-height: 1.5;
+  line-height: 2.0;
   color: black;
+  text-align: center;
 }
 
 .handwriting {
@@ -193,17 +196,20 @@ nav a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color:#e07796
+  background-color:#e07796;
+  border-radius: 5px;
 }
 
 .paint-image {
   width: 100%;
   height: 90%;
-  background-color:  #deb887; 
+  background-color:  #deb887;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .paint-info {
@@ -213,12 +219,15 @@ nav a:hover {
 }
 
 .paint-description {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
   color: #0e0d0d;
   background-color: rgb(197, 228, 166);
   text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  flex-grow: 0;
 }
 
 .swiper-slide:hover {
@@ -250,10 +259,12 @@ nav a:hover {
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid black;
-  text-align: center; 
-  margin-top: 30px;
-  margin-left: 15px;
+  text-align: center;
+  margin: 20px 15px 30px 15px;
   padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .big_button:hover{
