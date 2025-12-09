@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .paint-info {
-  flex: 0px 0px 0px 0px;
+  flex: 0 0 auto;
   padding: 0px;
   background-color: #deb887;
 }
@@ -482,7 +482,15 @@ footer {
     font-size: 2.0em;
   }
 
-  .big_section{
+  .section-header p {
+   l font-size: 0.9rem;
+  }
+  
+  .header nav a{
+    font-size:10px;
+  }
+ 
+.big_section{
     max-width: 940px;
     height: 600px;
     display:flex;
@@ -501,6 +509,7 @@ footer {
 
  .paint-description {
    margin-bottom: 8px;
+   font-size: 9px;
  }
 
  .swiper {
@@ -527,6 +536,10 @@ footer {
     font-size: 1.6em;
   }
 
+  .header nav a{
+    font-size:10px;
+  }
+
   .big_section{
     max-width: 590px;
     height: 450px;
@@ -548,6 +561,7 @@ footer {
 
  .paint-description {
    margin-bottom: 8px;
+   font-size: 8px;
  }
 
  .swiper {
