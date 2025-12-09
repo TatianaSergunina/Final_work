@@ -483,11 +483,11 @@ footer {
   }
 
   .section-header p {
-   l font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .header nav a{
-    font-size:10px;
+    font-size:12px;
   }
  
 .big_section{
@@ -536,8 +536,12 @@ footer {
     font-size: 1.6em;
   }
 
+  .section-header p {
+    font-size: 0.8rem;
+  }
+
   .header nav a{
-    font-size:10px;
+    font-size:12px;
   }
 
   .big_section{
