@@ -500,7 +500,7 @@ footer {
  }
 
  .paint-description {
-   margin-bottom: 9px;
+   margin-bottom: 8px;
  }
 
  .swiper {
@@ -546,7 +546,11 @@ footer {
     margin-bottom: 10px;
   }
 
+ .paint-description {
+   margin-bottom: 8px;
+ }
+
  .swiper {
-    padding: 30px 35px 40px 35px;
-  }
+   padding: 30px 35px 40px 35px;
+ }
 }
