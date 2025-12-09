@@ -71,7 +71,7 @@ h1 {
   text-align: center;
   margin-bottom: 0px;
   margin-top: 0px;
-  height: 90px;
+  height: 100px;
   color: black;
   background-color: #d6a3a3;
 }
@@ -81,9 +81,8 @@ h1 {
 }
 
 .section-header h1 {
-  font-size: 3.05rem;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 0px #1a1818; /* Тень 1: Смещение 1px вправо, 1px вниз, размытия нет */
+  font-size: 2.95rem;
+  margin-bottom: 10px;
   letter-spacing: 0.02em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
@@ -92,7 +91,7 @@ h1 {
   }
 
 .section-header p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   opacity: 0.9;
   transition: opacity 0.3s ease;
   color:rgb(22, 22, 22);
