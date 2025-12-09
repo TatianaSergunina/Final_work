@@ -17,7 +17,6 @@ body {
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   padding: 10px 10px;
-  line-height: 1.6;
   background-image: url('16.jpg');
   backdrop-filter: blur(9px);
   color: #333;
@@ -43,7 +42,6 @@ h1 {
   margin: 40px auto 20px 10px;
   position: relative;
   background-color: #deb887;
-  border-radius: 10px;
   backdrop-filter: blur(15px);
   border: 10px solid transparent; /* transparent для изображения */
   border-image: url('16.jpg') 30 round; /* Путь к файлу и как повторять */
@@ -51,7 +49,7 @@ h1 {
 
 .side-text p{
   font-size: 30px;
-  margin: left 30px;
+  margin-left: 30px;
   padding: 80px;
   width: 700px;
   margin-top: 100px;
@@ -65,7 +63,6 @@ h1 {
     font-size: 18px;
     /* Дополнительные эффекты для небрежности */
     line-height: 1.5;
-    text-shadow: 1px 1px 1px black; 
     font-weight: bold;
   }
 
@@ -86,7 +83,7 @@ h1 {
 .section-header h1 {
   font-size: 3.05rem;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 0px #1a1818; /* Тень 1: Смещение 2px вправо, 2px вниз, размытия нет */
+  text-shadow: 1px 1px 0px #1a1818; /* Тень 1: Смещение 1px вправо, 1px вниз, размытия нет */
   letter-spacing: 0.02em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
@@ -96,14 +93,13 @@ h1 {
 
 .section-header p {
   font-size: 1.2rem;
-  font-size: 1.2rem;
   opacity: 0.9;
   transition: opacity 0.3s ease;
   color:rgb(22, 22, 22);
 }
  
 header{
-  display:flex;
+  display: flex;
   height: 98px;
   justify-content:space-between;
   align-items:center;
@@ -187,8 +183,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   background-color:#e07796;
-
-}
+ }
 
 .paint-image {
   width: 100%;
@@ -256,12 +251,6 @@ nav a:hover {
   font-weight: bold;
   font-size: 15px;
 }  
-
-@supports not (-webkit-line-clamp: 2) {
-  .book-description {
-    max-height: calc(1.4em * 2);
-  }
-}
 
 .swiper-slide:hover .book-description {
   color: #e0e0e0;
@@ -343,7 +332,7 @@ main {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .card img {
@@ -419,7 +408,7 @@ footer {
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .category-card img {
@@ -458,7 +447,7 @@ footer {
 }
 
 .paint-description:hover {
-    color: blue;
+    color: rgb(12, 12, 14);
 }
 
 .view-button {
@@ -474,6 +463,8 @@ footer {
 }
 
 .view-button:hover {
+    width: 142px;
+    height: 42px;
     border-radius: 8px;
     background-color: #963f3f;
     font-weight: bold;
@@ -481,36 +472,81 @@ footer {
 }
 
 /* Адаптивность */
-@media (max-width: 1024px) {
-  .section-header h1 {
-    font-size: 2.5rem;
+@media (max-width: 1700px) {
+  body {
+    display: flex;
+    flex-direction: column;
   }
 
-.swiper {
-    padding: 35px 45px 50px 45px;
+  .section-header h1 {
+    font-size: 2.0em;
   }
+
+  .big_section{
+    max-width: 940px;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .container{
+    margin-bottom: 15px;
+  }
+
+ .side-text p {
+   margin-left: 20px;
+   margin-top: 60px;
+ }
+
+ .paint-description {
+   margin-bottom: 9px;
+ }
+
+ .swiper {
+   padding: 35px 45px 50px 45px;
+ }
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 20px 10px;
-  }
+@media (max-width: 800px) {
+   body {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 5px 5px 5px;
+   }
 
-  .container {
-    height: 500px;
-    margin: 10px 10px 20px 10px;
-  }
+   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+   }
 
   .section-header h1 {
-    font-size: 2rem;
+    font-size: 1.6em;
   }
 
-  .section-header p {
-    font-size: 1rem;
+  .big_section{
+    max-width: 590px;
+    height: 450px;
+    display:flex;
+    flex-direction: column;
+    flex: 1;
   }
 
-.swiper-button-next,
-.swiper-button-prev {
-    display: none !important;
+  .side-text{
+    margin-left: 10px;
+  }
+  .side-text p {
+    margin-left: 10px;
+  }
+
+  .container{
+    margin-bottom: 10px;
+  }
+
+ .swiper {
+    padding: 30px 35px 40px 35px;
   }
 }
